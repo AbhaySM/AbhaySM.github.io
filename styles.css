@@ -1,0 +1,63 @@
+body, html {
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: 'Roboto Slab', 'Courier New', 'Courier', sans-serif;
+	font-size:24px;
+	line-height:1.7;
+	background:#f9f9f9;
+	color:#444;
+}
+
+#container {
+	width:80%;
+	max-width:800px;
+	margin:0 auto;
+	padding: 3em 0;
+}
+
+h1 {
+	font-size:1.5em;
+	line-height:1.2;
+	margin-bottom:1em;
+}
+h2 {
+	font-size:1em;
+}
+
+a {
+	text-decoration: none;
+	border-bottom:1px solid #ccc;
+	padding-bottom:0;
+	color:#444;
+	transition:all 0.2s ease-in;
+}
+
+a:hover {
+	color:#000;
+	border-bottom:1px solid #000;
+}
+
+p {
+	margin-bottom:1.2em;
+	letter-spacing: 0.5px;
+	word-spacing:1px;
+}
+
+strong {
+	font-weight: normal;
+	font-style: italic;
+	margin: 0 0.05em 0 -0.05em;
+	padding: 0 0.03em 0 0.03em;
+}
+
+@media only screen and (max-width:640px) {
+	body {
+		font-size:20px;
+		line-height:1.5;
+	}
+}
