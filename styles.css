@@ -11,6 +11,7 @@ body {
 	line-height:1.7;
 	background:#f9f9f9;
 	color:#444;
+	font-weight:300;
 }
 
 #container {
@@ -24,10 +25,12 @@ h1 {
 	font-size:1.5em;
 	line-height:1.2;
 	margin-bottom:1em;
+	font-weight:700;
 }
 h2 {
 	font-size:1em;
 	margin: 0;
+	font-weight:700;
 }
 #tldr h2 {
 	display:inline-block;
