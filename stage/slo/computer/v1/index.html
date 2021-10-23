@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>SLO Computer</title>
+    <style type="text/css">
+    @font-face {
+      font-family: 'Object Sans';
+      src: url('fonts/ObjectSans-Regular.woff2') format('woff2'),
+           url('fonts/ObjectSans-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Object Sans';
+      src: url('fonts/ObjectSans-Bold.woff2') format('woff2'),
+           url('fonts/ObjectSans-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+    }
+    body {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    body,html {
+      font-family: 'Object Sans';
+      min-height: 100vh;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+      /* body{
+        background-color: #068D63;
+        background-image: url(img/bg-dark.png), url(img/bg-light.png);
+        background-position: left bottom, right top;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 1072px 966px, 788px 744px;
+        padding-top: 4rem;
+      } */
+      body{
+        background-color: #273747;
+        background-image: url(img/bg-blue.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      /* .image-section1{
+        text-align: center;
+      }
+      .image-section1 img{
+        width: 500px;
+        border-radius: 30px;
+      } */
+
+      .content-section {
+        padding-right: 6em;
+        max-width: 560px;
+      }
+      .content-section h1{
+        margin-top: 4rem;
+        font-size: 56px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 1.1;
+       }
+       .content-section p{
+         padding-top: 1em;
+         font-size: 20px;
+         line-height: 1.6em;
+       }
+
+
+       .form-group{
+        position: relative;
+        width: 375px;
+        margin-top: 3rem;
+       }
+       .form-group .email, .hs-input{
+          border-radius: 25px !important;
+          outline: none !important;
+          border: 0 !important;
+          padding: 16px !important;
+          width: 100% !important;
+          color: #068D63 !important;
+          font-weight: 600 !important;
+       }
+       .form-group .submit{
+        background: #FFD357;
+        border: 0;
+        border-radius: 25px;
+        padding: 10px 20px;
+        color: #068D63;
+        font-weight: 600;
+        position: absolute;
+        right: 8px;
+        top: 6px;
+       }
+       ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+           color: #068D63;
+          opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+           color: #068D63;
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+           color: #068D63;
+        }
+
+
+ul.feature{
+    padding: 0;
+    margin-top: 2rem;
+    list-style: none;
+}
+ul.feature li{
+  display: inline-block;
+    /*border-left: 1px solid #fff;*/
+    color: #fff;
+    padding: 0 10px;
+    font-size: 13px;
+}
+ul.feature li:before{
+  content: "\2022";
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+ul.feature li:first-child{
+  border: none;
+  padding-left: 0;
+  }
+  ul.feature li:first-child:before{
+  content: "";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+
+
+
+
+
+        @media (max-width:1367px) {
+          .content-section h1{
+            font-size: 48px;
+          }
+          .content-section p{
+            font-size: 18px;
+          }
+        }
+
+        /*Small devices landscape phones, less than 768px*/
+       @media (max-width: 767.98px) {
+         body{
+           padding: 2rem;
+           background-size: contain, contain;
+         }
+         .content-section h1{
+           font-size: 42px;
+         }
+         .main-section{
+           width: 100%;
+           align-items: baseline;
+         }
+         .form-group{
+           width: 100%;
+         }
+       /*  ul.feature li{
+           font-size: 13px;
+           margin: 10px 0;
+         }
+         ul.feature li:first-child{
+           border-left: none;
+           padding: 0;
+         }*/
+       }
+
+       /*Medium devices tablets, less than 992px*/
+      @media (max-width: 991.98px) {
+        .content-section {
+          padding-right: 0;
+          max-width: 100%;
+        }
+        #logo {
+          width: 150px;
+        }
+         body{
+          padding: 2rem;
+        }
+        .main-section{
+          width: 100%;
+            flex-wrap: wrap;
+        }
+        .form-group{
+          width: 100%;
+        }
+        .content-section h1{
+          margin-top: 3rem;
+        }
+        .content-section p {
+          font-size: 18px;
+        }
+        .image-section1{
+          text-align: center;
+          width: 100vw;
+          height: 80vw;
+          overflow: hidden;
+          margin-left: -32px;
+          margin-bottom: -32px;
+        }
+        .image-section1 img{
+          position: relative;
+          left: 50%;
+          transform: translateX(-48.5%);
+          width: 120vw;
+          max-width: none;
+        }
+      }
+
+      .hs-button{
+        background: red !important;
+      }
+
+    @media only screen and (min-width:992px) {
+      .image-section1{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        width: 70vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .image-section1 img{
+        width: 100%;
+      }
+
+      .row{
+        min-height: 100vh;
+      }
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="container p-0 my-auto">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="content-section">
+        <img id="logo" src="img/logo.svg">
+        <h1>The simplest way to setup &amp; manage your Service Level Objectives</h1>
+        <p>
+          Early threat detection. High signal&ndash;noise alerts. Error budget &amp; runway. Be the first to know when we go live.
+        </p>
+        <!-- <form style="display: none;" >
+          <div class="form-group">
+            <input class="email" type="text" name="email" placeholder="you@email.com">
+            <input class="submit" type="submit" value="Join">
+          </div>
+        </form> -->
+         <!-- <h2>Launching soon. Signup for early access.</h2> -->
+        <div class="form-group">
+          <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/shell.js"></script>
+          <script>
+            hbspt.forms.create({
+            region: "na1",
+            portalId: "8843898",
+            formId: "5dc2bce8-282d-4c93-ba7c-cb1b4e9eb9dc"
+          });
+          </script>
+        </div>
+      </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="image-section1">
+            <img class="img-fluid" src="img/hello-world.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!--   <div class="image-section">
+        <img src="img/icon.png">
+      </div> -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
