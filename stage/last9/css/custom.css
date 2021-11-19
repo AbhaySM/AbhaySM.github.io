@@ -162,6 +162,85 @@
   margin-top: 16px;
 }
 
+/* SLO Computer */
+.hero-para {
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto 1em;
+}
+.hero-button-large {
+  font-size: 24px;
+  padding: 1em 1.5em;
+  margin-top: .5em;
+}
+.slo-hero-container {
+  padding-top: 3em;
+  padding-bottom: 0;
+}
+.slo-hero-image {
+  overflow: hidden;
+  height: 34vw;
+}
+.slo-intro {
+  margin-top: 8em;
+  padding: 0 8em 0 0;
+}
+.slo-intro-image {
+  position: relative;
+  left: -10%;
+  overflow: hidden;
+  width: 80%;
+  height: 20em;
+}
+.slo-intro-image img {
+  position: absolute;
+  top: -50%;
+}
+.content.condensed {
+  padding-right: 6em;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+* + .content.condensed {
+  padding-right: 0;
+  padding-left: 6em;
+}
+.content.condensed .home-section-title {
+  width: 100%;
+}
+.slo .section2 .image img {
+  width: 100%;
+}
+.slo .section2, .slo .section3 {
+  padding-bottom: 6em;
+  padding-top: 6em;
+}
+.slo .section2 {
+  padding-top: 0;
+}
+.slo .section3 {
+  background-color: #172330;
+}
+.slo .section3 .mini-title {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  padding-bottom: 2em;
+}
+.tiny-title {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tiny-title span {
+  text-transform: none;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 991px) {
   .blog-posts.row > div {
@@ -225,7 +304,7 @@
     .small{
       width: 200px;
     }
-    
+
 
   /*Small devices landscape phones, less than 768px*/
   @media (max-width: 767.98px) {
@@ -256,5 +335,5 @@
     .m-md{
       margin: 1rem;
     }
-    
+
   }
