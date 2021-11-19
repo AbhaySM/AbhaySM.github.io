@@ -233,6 +233,7 @@
   padding-bottom: 2em;
 }
 .tiny-title {
+  padding-top: 1em;
   font-size: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -369,9 +370,9 @@
     margin: 0 auto;
   }
   .tiny-title {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.05em;
-    margin: 1em auto 3em;
+    margin: 2em auto 8em;
   }
   .slo .section3 .hero-buttons {
     margin: .5em auto 3em;
