@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+
+*{
+	font-family: 'Mali', Inter, Helvetica, Sans-Serif;
+}
+
+.horse-anime-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.horse-anime-wrap div{
+  flex: 1 0 auto;
+  margin: 8px;
+}
+.horse-anime__heading{
+	width: 100%;
+	text-align: center;
+	font-size: 38px;
+	line-height: 1.15;
+	color: #1bd59a;
+	margin-bottom: 16px;
+}
+
+.horse-anime__btn-wrap {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.horse-anime__btn-wrap .btn {
+    background: #00bf84;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    max-width: 32%;
+    margin-right: 10px;
+    font-size: 18px;
+	line-height: 1.0;
+	box-shadow: 3px 4px 0px #0d9168;
+	border: 1px solid rgba(255,255,255,0.3);
+	transition: all 0.2s ease;
+}
+.horse-anime__btn-wrap .btn:hover{
+	box-shadow: -2px 4px 0px #0d9168;
+	transform: scale(96%);
+	cursor: pointer;
+}
+.horse-anime__btn-wrap .btn:last-child{
+	margin-right: 0;
+}
+
+@media (max-width: 576px){
+	.horse-anime__heading{
+		font-size: 24px;
+		line-height: 1.0;
+	}
+	.horse-anime__btn-wrap {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		flex-grow: 1;
+	}
+	.horse-anime__btn-wrap .btn{
+		max-width: 100%;
+		margin: 10px 0;
+	}
+}
