@@ -67,9 +67,14 @@
           border-color: #FEA3A3;
         }
 
-        .medium-tags {
+        .tags {
+          flex-direction: column;
+          gap: 32px;
+        }
+        .medium {
           font-weight: 500;
-          padding-bottom: 64px;
+          flex-direction: column;
+          padding-top: 128px;
         }
         .example {
           gap: 4px;
@@ -87,39 +92,62 @@
         b {
           color: #364252;
         }
+        .textbox {
+          border-radius: 4px;
+          border: 1px solid #CDD5DF;
+          padding: 8px;
+          width: 320px;
+        }
       </style>
   </head>
   <body>
     <section>
-      <div class="regular-tags">
-          <span class="tag">Grey Label</span>
-          <span class="blue tag">Blue Label</span>
-          <span class="orange tag">Orange Label</span>
-          <span class="purple tag">Purple Label</span>
-          <span class="green tag">Green Label</span>
-          <span class="yellow tag">Yellow Label</span>
-          <span class="red tag">Red Label</span>
+      <div class="regular tags">
+        <div>
+            <span class="tag">Grey</span>
+            <span class="blue tag">Blue</span>
+            <span class="orange tag">Orange</span>
+            <span class="purple tag">Purple</span>
+            <span class="green tag">Green</span>
+            <span class="yellow tag">Yellow</span>
+            <span class="red tag">Red</span>
+        </div>
+
+        <div class="example textbox">
+          <span class="blue tag">'self' &times;</span>
+          <span class="blue tag">* &times;</span>
+          <span class="blue tag">192.168.1.1 &times;</span>
+          <h4>10.0.0.1|</h4>
+        </div>
+        <div class="example">
+          <h4>Custom Role</h4><span class="purple tag">Enterprise</span>
+        </div>
+        <div class="example">
+          <h4><b>License Key</b></h4><span class="blue tag">Active</span>
+        </div>
       </div>
-      <div class="medium-tags">
-          <span class="tag">Grey Label</span>
-          <span class="blue tag">Blue Label</span>
-          <span class="orange tag">Orange Label</span>
-          <span class="purple tag">Purple Label</span>
-          <span class="green tag">Green Label</span>
-          <span class="yellow tag">Yellow Label</span>
-          <span class="red tag">Red Label</span>
-      </div>
-      <div class="regular-tags example">
-        <h4>Custom Role</h4><span class="purple tag">Enterprise</span>
-      </div>
-      <div class="medium-tags example">
-        <h4>Custom Role</h4><span class="purple tag">Enterprise</span>
-      </div>
-      <div class="regular-tags example">
-        <h4><b>License Key</b></h4><span class="purple tag">Active</span>
-      </div>
-      <div class="medium-tags example">
-        <h4><b>License Key</b></h4><span class="purple tag">Active</span>
+      <div class="medium tags">
+        <div>
+            <span class="tag">Grey</span>
+            <span class="blue tag">Blue</span>
+            <span class="orange tag">Orange</span>
+            <span class="purple tag">Purple</span>
+            <span class="green tag">Green</span>
+            <span class="yellow tag">Yellow</span>
+            <span class="red tag">Red</span>
+        </div>
+        <div class="example textbox">
+          <span class="blue tag">'self' &times;</span>
+          <span class="blue tag">* &times;</span>
+          <span class="blue tag">192.168.1.1 &times;</span>
+          <h4>10.0.0.1|</h4>
+        </div>
+        <div class="example">
+          <h4>Custom Role</h4><span class="purple tag">Enterprise</span>
+        </div>
+        <div class="example">
+          <h4><b>License Key</b></h4><span class="blue tag">Active</span>
+        </div>
       </div>
     </section>
   </body>
