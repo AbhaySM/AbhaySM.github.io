@@ -19,22 +19,23 @@
             left: 0;
             background-size: auto 972px;
             background-repeat: repeat;
+            animation: falling-confetti linear infinite;
           }
           #layer-1 {
             background-image: url("images/layer-1.png");
-            animation: falling-confetti 7s linear infinite;
+            animation-duration: 7s;
           }
           #layer-2 {
             background-image: url("images/layer-2.png");
-            animation: falling-confetti 10s linear infinite;
+            animation-duration: 10s;
           }
           #layer-3 {
             background-image: url("images/layer-3.png");
-            animation: falling-confetti 15s linear infinite;
+            animation-duration: 15s;
           }
           @keyframes falling-confetti {
             0% {background-position: 50% 0}
-            100% {background-position: 50% 972px}
+            100% {background-position: 50% 971px}
           }
       </style>
   </head>
