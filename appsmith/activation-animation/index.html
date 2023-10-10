@@ -1,0 +1,46 @@
+<html>
+  <head>
+      <title>User Activation</title>
+      <style>
+          body, html {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+          }
+          body {
+            background: #F8FAFC;
+          }
+          .confetti {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-size: auto 972px;
+            background-repeat: repeat;
+          }
+          #layer-1 {
+            background-image: url("images/layer-1.png");
+            animation: falling-confetti 7s linear infinite;
+          }
+          #layer-2 {
+            background-image: url("images/layer-2.png");
+            animation: falling-confetti 10s linear infinite;
+          }
+          #layer-3 {
+            background-image: url("images/layer-3.png");
+            animation: falling-confetti 15s linear infinite;
+          }
+          @keyframes falling-confetti {
+            0% {background-position: 50% 0}
+            100% {background-position: 50% 972px}
+          }
+      </style>
+  </head>
+  <body>
+      <div id="layer-3" class="confetti"></div>
+      <div id="layer-2" class="confetti"></div>
+      <div id="layer-1" class="confetti"></div>
+  </body>
+</html>
