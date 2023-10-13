@@ -1,0 +1,139 @@
+<html>
+  <head>
+      <title>Delete Apps</title>
+      <style>
+          body, html {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+          }
+          body {
+            background: #fff;
+            font-family: "Inter", "SF Sans", sans-serif;
+            font-size: 12px;
+            color: #6A7585;
+            line-height: 32px;
+          }
+          .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            gap: 64px;
+          }
+          section {
+            display: flex;
+            gap: 8px;
+          }
+          .app {
+            height: 170px;
+            width: 222px;
+            background: #fff;
+            border-radius: 4px;
+            border: 4px solid transparent;
+            outline: 2px solid transparent;
+            transition: all .1s ease, opacity .5s ease;;
+          }
+          #app-1 .thumb {
+            background: #FFDEE2;
+          }
+          #app-2 .thumb {
+            background: #D9E7FF;
+          }
+          #app-3 .thumb {
+            background: #FFEFDB;
+          }
+          .thumb {
+            height: calc(100% - 32px);
+            border-radius: 4px;
+          }
+          .title {
+            padding: 4px 0;
+            height: 32px;
+          }
+          .app.selected {
+            outline: 2px solid #8BB0FA;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+          }
+          .app.deleted {
+            height: 0;
+            width: 0;
+            opacity: 0;
+            transition: height .5s ease, width .5s ease, opacity .15s ease;
+          }
+          a.button {
+            display: block;
+            text-decoration: none;
+            font-weight: bold;
+            color: #4C5664;
+            background: #ebf1fa;
+            padding: 8px 12px;
+            border-radius: 4px;
+            line-height: 1.2;
+            transition: all .2s ease;
+            border: 1px solid transparent;
+          }
+          a#delete {
+            color: #F22B2B;
+            background: #FFF2F2;
+          }
+          a#delete:hover {
+            border: 1px solid #ffdbdb;
+          }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <section id="apps">
+        <div id="app-1" class="app">
+            <div class="thumb"></div>
+            <div class="title">Last edit by Mark at 7:40 PM</div>
+        </div>
+        <div id="app-2" class="app">
+            <div class="thumb"></div>
+            <div class="title">Last edit by Mark at 7:40 PM</div>
+        </div>
+        <div id="app-3" class="app">
+            <div class="thumb"></div>
+            <div class="title">Last edit by Mark at 7:40 PM</div>
+        </div>
+      </section>
+      <section>
+          <a href=# id="delete" class="button">Delete</a>
+          <a href=# id="show" class="button">Show All</a>
+      </section>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var apps = document.getElementsByClassName("app");
+        var deleteButton = document.getElementById("delete");
+        var showButton = document.getElementById("show");
+
+        for (var app=0; app < apps.length; app++) {
+          apps[app].onclick = function() {
+            this.classList.toggle('selected');
+          };
+        };
+
+        deleteButton.onclick = function() {
+          var selected = document.getElementsByClassName("selected");
+          for (var i=0; i < selected.length; i++) {
+              selected[i].classList.add('deleted');
+          };
+        };
+
+        showButton.onclick = function() {
+          for (var i=0; i < apps.length; i++) {
+              apps[i].classList.remove('deleted', 'selected');
+          };
+        };
+
+      });
+    </script>
+  </body>
+</html>
