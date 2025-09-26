@@ -1,0 +1,108 @@
+@keyframes blink {
+    0% {
+        background-image: url("images/eyes/open.svg");
+    }
+    29% {
+        background-image: url("images/eyes/open.svg");
+    }
+    30% {
+        background-image: url("images/eyes/closed.svg");
+    }
+    33% {
+        background-image: url("images/eyes/closed.svg");
+    }
+    34% {
+        background-image: url("images/eyes/open.svg");
+    }
+    96% {
+        background-image: url("images/eyes/open.svg");
+    }
+    97% {
+        background-image: url("images/eyes/closed.svg");
+    }
+    100% {
+        background-image: url("images/eyes/closed.svg");
+    }
+}
+
+@keyframes gentle-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(6deg);
+    }
+}
+
+@keyframes gentle-bob {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, -2%);
+    }
+}
+
+@keyframes icon-move {
+    0% {
+        transform: translate(0, 10%) rotate(10deg);
+        opacity: 0;
+    }
+    20% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, -10%) rotate(-10deg);
+        opacity: 0;
+    }
+}
+
+@keyframes icon-change {
+    0% {
+        background-image: url("images/icon/icon-cloud.svg");
+    }
+    25% {
+        background-image: url("images/icon/icon-exclaim.svg");
+    }
+    50% {
+        background-image: url("images/icon/icon-note.svg");
+    }
+    75% {
+        background-image: url("images/icon/icon-code.svg");
+    }
+}
+
+@keyframes speak {
+    0% {
+        background-image: url("images/mouth/smile.svg");
+    }
+    15% {
+        background-image: url("images/mouth/o-S.svg");
+    }
+    30% {
+        background-image: url("images/mouth/D.svg");
+    }
+    45% {
+        background-image: url("images/mouth/smile.svg");
+    }
+    60% {
+        background-image: url("images/mouth/o-L.svg");
+    }
+    75% {
+        background-image: url("images/mouth/smile.svg");
+    }
+}

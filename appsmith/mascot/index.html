@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="animations.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="interactions.js"></script>
+        <title>Appsmith Mascot</title>
+    </head>
+    <body>
+        <div id="mascot-container">
+            <div id="mascot-bounding-box" class="style-1 idle medium">
+                <div id="icon"></div>
+                <div id="mascot">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    <div class="hair-static"></div>
+                    <div class="hair-dynamic"></div>
+                    <div class="face">
+                        <div class="eyes"></div>
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="top-nav">
+            <div class="buttons-container">
+                <b>Agent:</b>
+                <a href="#" id="style-1" class="selected">1</a>
+                <a href="#" id="style-2">2</a>
+                <a href="#" id="style-3">3</a>
+                <a href="#" id="style-4">4</a>
+                <a href="#" id="style-5">5</a>
+                <a href="#" id="style-6">6</a>
+            </div>
+            <div class="buttons-container">
+                <b>Size:</b>
+                <a href="#" id="small">S</a>
+                <a href="#" id="medium" class="selected">M</a>
+                <a href="#" id="large">L</a>
+            </div>
+        </nav>
+        <nav id="bottom-nav">
+            <div class="buttons-container">
+                <b>Mode:</b>
+                <a href="#" id="idle" class="selected">Idle</a>
+                <a href="#" id="listening">Listen</a>
+                <a href="#" id="mute">Mute</a>
+                <a href="#" id="thinking">Think & Work</a>
+                <a href="#" id="connecting">Connect</a>
+                <a href="#" id="speaking">Speak</a>
+            </div>
+        </nav>
+    </body>
+</html>
