@@ -309,10 +309,6 @@ nav b {
     animation: rotate 1s ease-in-out alternate infinite;
     transform-origin: 20% 55%;
 }
-#mascot-bounding-box.connecting .right {
-    background-image: url("images/right/hand.svg");
-    animation: rotate 1s ease-in-out alternate infinite;
-}
 #mascot-bounding-box.connecting .eyes {
     animation: blink 5s alternate infinite;
 }
