@@ -118,7 +118,6 @@ nav b {
 #mascot-bounding-box div {
     transform-origin: 60% 70%;
     transform: rotate(0) translate(0, 0);
-    transition: transform 1s ease-in-out;
     width: 100%;
     height: 100%;
 }
@@ -353,4 +352,19 @@ body.dark nav .buttons-container {
 }
 .connecting .face {
     animation: gentle-bob 1s ease-in-out alternate infinite;
+}
+.connecting .mouth {
+    transform: translateX(2%) !important;
+}
+
+/*Mascot hover*/
+#mascot:hover .mouth {
+    background-image: url("images/mouth/smile.svg");
+    animation: fade-in 0.2s ease-in-out;
+}
+#mascot .eyes {
+    transition: all 0.5s ease;
+}
+#mascot:hover .eyes {
+    transform: rotate(6deg);
 }
