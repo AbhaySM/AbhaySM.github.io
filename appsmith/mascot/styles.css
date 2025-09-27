@@ -292,7 +292,7 @@ body.dark nav .buttons-container {
     animation: gentle-rotate 0.5s ease-in-out alternate infinite;
 }
 .listening .eyes {
-    background-image: url("images/eyes/closed.svg");
+    animation: blink 5s alternate infinite;
 }
 .listening #mascot {
     animation: gentle-bob 0.5s ease-in-out alternate infinite;
@@ -346,7 +346,7 @@ body.dark nav .buttons-container {
     animation: rotate 1s ease-in-out alternate infinite;
 }
 .connecting .eyes {
-    animation: blink 5s alternate infinite;
+    background-image: url("images/eyes/closed.svg");
 }
 .connecting .hair-dynamic {
     animation: rotate 1s ease-in-out alternate infinite;
