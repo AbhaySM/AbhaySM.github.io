@@ -18,6 +18,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: PTRootUI, sans-serif;
     font-size: 16px;
+    transition: background 0.2s ease-in-out;
 }
 
 img,
@@ -71,6 +72,7 @@ nav .buttons-container {
     justify-content: center;
     align-items: center;
     gap: 4px;
+    transition: all 0.2s ease-in-out;
 }
 nav a {
     display: block;
@@ -121,6 +123,15 @@ nav b {
     height: 100%;
 }
 
+#mascot-bounding-box .left {
+    transform-origin: 20% 55%;
+}
+#mascot-bounding-box .right {
+    transform-origin: 80% 45%;
+}
+#mascot-bounding-box .hair-dynamic {
+    transform-origin: 50% 20%;
+}
 #mascot-bounding-box #icon {
     right: 0;
     left: unset;
@@ -133,192 +144,213 @@ nav b {
     position: relative;
     transition: all 0.5s cubic-bezier(0.64, -0.26, 0.29, 1.3);
 }
-#mascot-bounding-box.large {
+.large #mascot-bounding-box {
     height: 256px;
     width: 256px;
 }
 
-#mascot-bounding-box.medium {
+.medium #mascot-bounding-box {
     height: 128px;
     width: 128px;
 }
 
-#mascot-bounding-box.small {
+.small #mascot-bounding-box {
     height: 64px;
     width: 64px;
 }
 
+/*Dark Mode*/
+body.dark {
+    background: #08070d;
+    color: #fff;
+}
+body.dark #mascot {
+    filter: invert(100%) hue-rotate(180deg);
+}
+body.dark nav a:hover,
+body.dark nav a.selected {
+    background-color: #3f394d;
+    color: #fff;
+}
+body.dark nav a {
+    color: #fff;
+}
+body.dark nav .buttons-container {
+    background-color: #1a181f;
+}
+
 /* Defaults */
-#mascot-bounding-box .left {
+.left {
     background-image: url("images/left/ear.svg");
 }
-#mascot-bounding-box .hair-static {
+.hair-static {
     background-image: url("images/hair-static/1.svg");
 }
-#mascot-bounding-box .hair-dynamic {
+.hair-dynamic {
     background-image: url("images/hair-dynamic/1.svg");
-    transform-origin: 50% 20%;
 }
-#mascot-bounding-box .eyes {
+.eyes {
     background-image: url("images/eyes/closed.svg");
 }
 
 /* Styles */
-#mascot-bounding-box.style-1 .left,
-#mascot-bounding-box.style-5 .left,
-#mascot-bounding-box.style-6 .left {
+.style-1 .left,
+.style-5 .left,
+.style-6 .left {
     background-image: url("images/left/ear.svg");
 }
-#mascot-bounding-box.style-2 .left,
-#mascot-bounding-box.style-3 .left,
-#mascot-bounding-box.style-4 .left {
+.style-2 .left,
+.style-3 .left,
+.style-4 .left {
     background-image: url("images/left/earring.svg");
 }
 
-#mascot-bounding-box.style-1 .hair-static {
+.style-1 .hair-static {
     background-image: url("images/hair-static/1.svg");
 }
-#mascot-bounding-box.style-1 .hair-dynamic {
+.style-1 .hair-dynamic {
     background-image: url("images/hair-dynamic/1.svg");
 }
 
-#mascot-bounding-box.style-2 .hair-static {
+.style-2 .hair-static {
     background-image: url("images/hair-static/2.svg");
 }
-#mascot-bounding-box.style-2 .hair-dynamic {
+.style-2 .hair-dynamic {
     background-image: url("images/hair-dynamic/2.svg");
 }
 
-#mascot-bounding-box.style-3 .hair-static {
+.style-3 .hair-static {
     background-image: url("images/hair-static/3.svg");
 }
-#mascot-bounding-box.style-3 .hair-dynamic {
+.style-3 .hair-dynamic {
     background-image: url("images/hair-dynamic/3.svg");
 }
 
-#mascot-bounding-box.style-4 .hair-static {
+.style-4 .hair-static {
     background-image: url("images/hair-static/4.svg");
 }
-#mascot-bounding-box.style-4 .hair-dynamic {
+.style-4 .hair-dynamic {
     background-image: url("images/hair-dynamic/4.svg");
 }
 
-#mascot-bounding-box.style-5 .hair-static {
+.style-5 .hair-static {
     background-image: url("images/hair-static/5.svg");
 }
-#mascot-bounding-box.style-5 .hair-dynamic {
+.style-5 .hair-dynamic {
     background-image: url("images/hair-dynamic/5.svg");
 }
 
-#mascot-bounding-box.style-6 .hair-static {
+.style-6 .hair-static {
     background-image: url("images/hair-static/1.svg");
 }
-#mascot-bounding-box.style-6 .hair-dynamic {
+.style-6 .hair-dynamic {
     background-image: url("images/hair-dynamic/6.svg");
 }
 
 /* States */
 /* Idle/Default */
-#mascot-bounding-box.idle #mascot {
+.idle #mascot {
     animation: gentle-bob 0.5s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.idle .face {
+.idle .face {
     animation: gentle-bob 0.5s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.idle .hair-dynamic {
+.idle .hair-dynamic {
     animation: gentle-rotate 0.75s ease-in-out alternate infinite;
 }
 
 /* Mute */
-#mascot-bounding-box.mute .right {
+.mute .right {
     background-image: url("images/right/hand.svg");
-}
-#mascot-bounding-box.mute .left {
-    background-image: url("images/left/hand.svg");
-}
-#mascot-bounding-box.mute .eyes {
-    animation: blink 5s alternate infinite;
-}
-#mascot-bounding-box.mute #mascot {
     animation: rotate 4s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.mute .face {
+.mute .left {
+    background-image: url("images/left/hand.svg");
+    animation: rotate 4s ease-in-out alternate infinite;
+}
+.mute .eyes {
+    animation: blink 5s alternate infinite;
+}
+.mute #mascot {
+    animation: rotate 4s ease-in-out alternate infinite;
+}
+.mute .face {
     animation: gentle-bob 2s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.mute .hair-dynamic {
+.mute .hair-dynamic {
     animation: gentle-rotate 2s ease-in-out alternate infinite;
     animation-delay: 1s;
 }
 
 /* Listening */
-#mascot-bounding-box.listening .left {
+.listening .left {
     background-image: url("images/left/headphones.svg");
+    animation: gentle-rotate 0.5s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.listening .eyes {
+.listening .eyes {
     background-image: url("images/eyes/closed.svg");
 }
-#mascot-bounding-box.listening #mascot {
+.listening #mascot {
     animation: gentle-bob 0.5s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.listening .face {
+.listening .face {
     animation: gentle-bob 0.5s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.listening .hair-dynamic {
+.listening .hair-dynamic {
     animation: gentle-rotate 0.75s ease-in-out alternate infinite;
 }
 
 /* Thinking */
-#mascot-bounding-box.thinking .eyes {
+.thinking .eyes {
     background-image: url("images/eyes/concentrate.svg");
 }
-#mascot-bounding-box.thinking .hair-dynamic {
+.thinking .hair-dynamic {
     background-image: none;
 }
-#mascot-bounding-box.thinking #icon {
+.thinking #icon {
     animation:
         icon-move 1s ease-in-out infinite,
         icon-change 4s step-end infinite;
 }
-#mascot-bounding-box.thinking #mascot {
+.thinking #mascot {
     animation: gentle-bob 1s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.thinking .face {
+.thinking .face {
     animation: gentle-bob 0.5s ease-in-out alternate infinite;
 }
 
 /* Speaking */
-#mascot-bounding-box.speaking .eyes {
+.speaking .eyes {
     animation: blink 5s alternate infinite;
 }
-#mascot-bounding-box.speaking .hair-dynamic {
+.speaking .hair-dynamic {
     animation: gentle-rotate 0.75s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.speaking #mascot {
+.speaking #mascot {
     animation: gentle-bob 1s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.speaking .face {
+.speaking .face {
     animation: gentle-bob 0.5s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.speaking .mouth {
+.speaking .mouth {
     animation: speak 1.5s step-end alternate infinite;
 }
 
 /* Connecting */
-#mascot-bounding-box.connecting .left {
+.connecting .left {
     background-image: url("images/left/connecting.svg");
     animation: rotate 1s ease-in-out alternate infinite;
-    transform-origin: 20% 55%;
 }
-#mascot-bounding-box.connecting .eyes {
+.connecting .eyes {
     animation: blink 5s alternate infinite;
 }
-#mascot-bounding-box.connecting .hair-dynamic {
+.connecting .hair-dynamic {
     animation: rotate 1s ease-in-out alternate infinite;
     animation-delay: 0.5s;
 }
-#mascot-bounding-box.connecting #mascot {
+.connecting #mascot {
     animation: rotate 1s ease-in-out alternate infinite;
 }
-#mascot-bounding-box.connecting .face {
+.connecting .face {
     animation: gentle-bob 1s ease-in-out alternate infinite;
 }
