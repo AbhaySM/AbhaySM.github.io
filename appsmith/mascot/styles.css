@@ -57,6 +57,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 8px;
+    flex-wrap: wrap;
 }
 nav#top-nav {
     top: 32px;
@@ -371,4 +372,34 @@ body.dark nav .buttons-container {
 }
 #mascot:hover .eyes {
     transform: rotate(6deg);
+}
+
+@media only screen and (max-width: 820px) {
+    body {
+        font-size: 16px;
+    }
+    nav {
+        padding: 0 8px;
+        gap: 4px;
+    }
+    nav#top-nav {
+        top: 16px;
+    }
+    nav#bottom-nav {
+        bottom: 16px;
+    }
+    nav a {
+        padding: 8px 10px;
+        min-width: 36px;
+        text-align: center;
+    }
+    nav .buttons-container {
+        padding: 4px;
+        max-width: 100%;
+        flex-basis: 0;
+        gap: 0;
+    }
+    nav b {
+        display: none;
+    }
 }
