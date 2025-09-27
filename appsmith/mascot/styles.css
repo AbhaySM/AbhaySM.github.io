@@ -67,7 +67,7 @@ nav#bottom-nav {
     bottom: 32px;
 }
 nav .buttons-container {
-    padding: 8px 24px;
+    padding: 8px;
     background-color: #efedf2;
     border-radius: 12px;
     display: flex;
@@ -91,7 +91,7 @@ nav a.selected {
 }
 nav b {
     display: block;
-    padding: 0 8px;
+    padding: 0 8px 0px 16px;
 }
 
 /* Mascot */
@@ -119,7 +119,7 @@ nav b {
 #mascot-bounding-box div {
     transform-origin: 60% 70%;
     transform: rotate(0) translate(0, 0);
-    transition: all 0.1s ease-in-out;
+    transition: transform 1s ease-in-out;
     width: 100%;
     height: 100%;
 }
@@ -134,7 +134,7 @@ nav b {
 
 #mascot-bounding-box {
     position: relative;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s cubic-bezier(0.64, -0.26, 0.29, 1.3);
 }
 #mascot-bounding-box.large {
     height: 256px;
