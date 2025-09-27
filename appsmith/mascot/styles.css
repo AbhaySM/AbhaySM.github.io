@@ -139,24 +139,31 @@ nav b {
     width: 40%;
     transform-origin: 50% 50%;
 }
-
 #mascot-bounding-box {
     position: relative;
     transition: all 0.5s cubic-bezier(0.64, -0.26, 0.29, 1.3);
+}
+
+/*Sizes*/
+.xlarge #mascot-bounding-box {
+    height: 400px;
+    width: 400px;
 }
 .large #mascot-bounding-box {
     height: 256px;
     width: 256px;
 }
-
 .medium #mascot-bounding-box {
     height: 128px;
     width: 128px;
 }
-
 .small #mascot-bounding-box {
     height: 64px;
     width: 64px;
+}
+.xsmall #mascot-bounding-box {
+    height: 40px;
+    width: 40px;
 }
 
 /*Dark Mode*/
