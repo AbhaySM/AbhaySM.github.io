@@ -6,22 +6,22 @@
         background-image: url("images/eyes/open.svg");
     }
     30% {
-        background-image: url("images/eyes/closed.svg");
+        background-image: url("images/eyes/concentrate.svg");
+    }
+    32% {
+        background-image: url("images/eyes/concentrate.svg");
     }
     33% {
-        background-image: url("images/eyes/closed.svg");
-    }
-    34% {
-        background-image: url("images/eyes/open.svg");
-    }
-    96% {
         background-image: url("images/eyes/open.svg");
     }
     97% {
-        background-image: url("images/eyes/closed.svg");
+        background-image: url("images/eyes/open.svg");
+    }
+    98% {
+        background-image: url("images/eyes/concentrate.svg");
     }
     100% {
-        background-image: url("images/eyes/closed.svg");
+        background-image: url("images/eyes/concentrate.svg");
     }
 }
 

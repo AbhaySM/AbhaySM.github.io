@@ -276,7 +276,7 @@ body.dark nav .buttons-container {
     animation: rotate 4s ease-in-out alternate infinite;
 }
 .mute .eyes {
-    animation: blink 5s alternate infinite;
+    animation: blink 5s step-end alternate infinite;
 }
 .mute #mascot {
     animation: rotate 4s ease-in-out alternate infinite;
@@ -299,7 +299,7 @@ body.dark nav .buttons-container {
     animation: gentle-rotate 0.5s ease-in-out alternate infinite;
 }
 .listening .eyes {
-    animation: blink 5s alternate infinite;
+    animation: blink 5s step-end alternate infinite;
 }
 .listening #mascot {
     animation: gentle-bob 0.5s ease-in-out alternate infinite;
@@ -332,7 +332,7 @@ body.dark nav .buttons-container {
 
 /* Speaking */
 .speaking .eyes {
-    animation: blink 5s alternate infinite;
+    animation: blink 5s step-end alternate infinite;
 }
 .speaking .hair-dynamic {
     animation: gentle-rotate 0.75s ease-in-out alternate infinite;
@@ -375,7 +375,7 @@ body.dark nav .buttons-container {
     animation: fade-in 0.2s ease-in-out;
 }
 #mascot .eyes {
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
 }
 #mascot:hover .eyes {
     transform: rotate(6deg);
