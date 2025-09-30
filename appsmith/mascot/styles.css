@@ -386,6 +386,7 @@ body.dark nav .buttons-container {
 .dark.thinking .eyes {
     background-image: url("images/dark/eyes/concentrate.svg");
 }
+.dark.thinking .hair-dynamic,
 .thinking .hair-dynamic {
     background-image: none;
 }
