@@ -24,6 +24,32 @@
         background-image: url("images/eyes/concentrate.svg");
     }
 }
+@keyframes dark-blink {
+    0% {
+        background-image: url("images/dark/eyes/open.svg");
+    }
+    29% {
+        background-image: url("images/dark/eyes/open.svg");
+    }
+    30% {
+        background-image: url("images/dark/eyes/concentrate.svg");
+    }
+    32% {
+        background-image: url("images/dark/eyes/concentrate.svg");
+    }
+    33% {
+        background-image: url("images/dark/eyes/open.svg");
+    }
+    97% {
+        background-image: url("images/dark/eyes/open.svg");
+    }
+    98% {
+        background-image: url("images/dark/eyes/concentrate.svg");
+    }
+    100% {
+        background-image: url("images/dark/eyes/concentrate.svg");
+    }
+}
 
 @keyframes gentle-rotate {
     0% {
@@ -104,6 +130,26 @@
     }
     75% {
         background-image: url("images/mouth/smile.svg");
+    }
+}
+@keyframes dark-speak {
+    0% {
+        background-image: url("images/dark/mouth/smile.svg");
+    }
+    15% {
+        background-image: url("images/dark/mouth/o-S.svg");
+    }
+    30% {
+        background-image: url("images/dark/mouth/D.svg");
+    }
+    45% {
+        background-image: url("images/dark/mouth/smile.svg");
+    }
+    60% {
+        background-image: url("images/dark/mouth/o-L.svg");
+    }
+    75% {
+        background-image: url("images/dark/mouth/smile.svg");
     }
 }
 

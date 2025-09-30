@@ -172,7 +172,7 @@ body.dark {
     color: #fff;
 }
 body.dark #mascot {
-    filter: invert(100%) hue-rotate(180deg);
+    /*filter: invert(100%) hue-rotate(180deg);*/
 }
 body.dark nav a:hover,
 body.dark nav a.selected {
@@ -190,14 +190,26 @@ body.dark nav .buttons-container {
 .left {
     background-image: url("images/left/ear.svg");
 }
+.dark .left {
+    background-image: url("images/dark/left/ear.svg");
+}
 .hair-static {
     background-image: url("images/hair-static/1.svg");
+}
+.dark .hair-static {
+    background-image: url("images/dark/hair-static/1.svg");
 }
 .hair-dynamic {
     background-image: url("images/hair-dynamic/1.svg");
 }
+.dark .hair-dynamic {
+    background-image: url("images/dark/hair-dynamic/1.svg");
+}
 .eyes {
     background-image: url("images/eyes/closed.svg");
+}
+.dark .eyes {
+    background-image: url("images/dark/eyes/closed.svg");
 }
 
 /* Styles */
@@ -211,12 +223,28 @@ body.dark nav .buttons-container {
 .style-4 .left {
     background-image: url("images/left/earring.svg");
 }
+.dark.style-1 .left,
+.dark.style-5 .left,
+.dark.style-6 .left {
+    background-image: url("images/dark/left/ear.svg");
+}
+.dark.style-2 .left,
+.dark.style-3 .left,
+.dark.style-4 .left {
+    background-image: url("images/dark/left/earring.svg");
+}
 
 .style-1 .hair-static {
     background-image: url("images/hair-static/1.svg");
 }
 .style-1 .hair-dynamic {
     background-image: url("images/hair-dynamic/1.svg");
+}
+.dark.style-1 .hair-static {
+    background-image: url("images/dark/hair-static/1.svg");
+}
+.dark.style-1 .hair-dynamic {
+    background-image: url("images/dark/hair-dynamic/1.svg");
 }
 
 .style-2 .hair-static {
@@ -225,12 +253,24 @@ body.dark nav .buttons-container {
 .style-2 .hair-dynamic {
     background-image: url("images/hair-dynamic/2.svg");
 }
+.dark.style-2 .hair-static {
+    background-image: url("images/dark/hair-static/2.svg");
+}
+.dark.style-2 .hair-dynamic {
+    background-image: url("images/dark/hair-dynamic/2.svg");
+}
 
 .style-3 .hair-static {
     background-image: url("images/hair-static/3.svg");
 }
 .style-3 .hair-dynamic {
     background-image: url("images/hair-dynamic/3.svg");
+}
+.dark.style-3 .hair-static {
+    background-image: url("images/dark/hair-static/3.svg");
+}
+.dark.style-3 .hair-dynamic {
+    background-image: url("images/dark/hair-dynamic/3.svg");
 }
 
 .style-4 .hair-static {
@@ -239,6 +279,12 @@ body.dark nav .buttons-container {
 .style-4 .hair-dynamic {
     background-image: url("images/hair-dynamic/4.svg");
 }
+.dark.style-4 .hair-static {
+    background-image: url("images/dark/hair-static/4.svg");
+}
+.dark.style-4 .hair-dynamic {
+    background-image: url("images/dark/hair-dynamic/4.svg");
+}
 
 .style-5 .hair-static {
     background-image: url("images/hair-static/5.svg");
@@ -246,12 +292,24 @@ body.dark nav .buttons-container {
 .style-5 .hair-dynamic {
     background-image: url("images/hair-dynamic/5.svg");
 }
+.dark.style-5 .hair-static {
+    background-image: url("images/dark/hair-static/5.svg");
+}
+.dark.style-5 .hair-dynamic {
+    background-image: url("images/dark/hair-dynamic/5.svg");
+}
 
 .style-6 .hair-static {
     background-image: url("images/hair-static/1.svg");
 }
 .style-6 .hair-dynamic {
     background-image: url("images/hair-dynamic/6.svg");
+}
+.dark.style-6 .hair-static {
+    background-image: url("images/dark/hair-static/1.svg");
+}
+.dark.style-6 .hair-dynamic {
+    background-image: url("images/dark/hair-dynamic/6.svg");
 }
 
 /* States */
@@ -271,12 +329,21 @@ body.dark nav .buttons-container {
     background-image: url("images/right/headphones.svg");
     animation: rotate 4s ease-in-out alternate infinite;
 }
+.dark.mute .right {
+    background-image: url("images/dark/right/headphones.svg");
+}
 .mute .left {
     background-image: url("images/left/headphones.svg");
     animation: rotate 4s ease-in-out alternate infinite;
 }
+.dark.mute .left {
+    background-image: url("images/dark/left/headphones.svg");
+}
 .mute .eyes {
     animation: blink 5s step-end alternate infinite;
+}
+.dark.mute .eyes {
+    animation: dark-blink 5s step-end alternate infinite;
 }
 .mute #mascot {
     animation: rotate 4s ease-in-out alternate infinite;
@@ -292,14 +359,15 @@ body.dark nav .buttons-container {
 /* Listening */
 .listening .left {
     background-image: url("images/left/listening.svg");
-    /*animation: gentle-rotate 0.5s ease-in-out alternate infinite;*/
 }
-.listening .right {
-    /*background-image: url("images/right/hand.svg");
-    animation: gentle-rotate 0.5s ease-in-out alternate infinite;*/
+.dark.listening .left {
+    background-image: url("images/dark/left/listening.svg");
 }
 .listening .eyes {
     animation: blink 5s step-end alternate infinite;
+}
+.dark.listening .eyes {
+    animation: dark-blink 5s step-end alternate infinite;
 }
 .listening #mascot {
     animation: gentle-bob 1s ease-in-out alternate infinite;
@@ -314,6 +382,9 @@ body.dark nav .buttons-container {
 /* Thinking */
 .thinking .eyes {
     background-image: url("images/eyes/concentrate.svg");
+}
+.dark.thinking .eyes {
+    background-image: url("images/dark/eyes/concentrate.svg");
 }
 .thinking .hair-dynamic {
     background-image: none;
@@ -334,6 +405,9 @@ body.dark nav .buttons-container {
 .speaking .eyes {
     animation: blink 5s step-end alternate infinite;
 }
+.dark.speaking .eyes {
+    animation: dark-blink 5s step-end alternate infinite;
+}
 .speaking .hair-dynamic {
     animation: gentle-rotate 1s ease-in-out alternate infinite;
 }
@@ -346,14 +420,23 @@ body.dark nav .buttons-container {
 .speaking .mouth {
     animation: speak 1.5s step-end alternate infinite;
 }
+.dark.speaking .mouth {
+    animation: dark-speak 1.5s step-end alternate infinite;
+}
 
 /* Connecting */
 .connecting .left {
     background-image: url("images/left/connecting.svg");
     animation: rotate 3.5s ease-in-out alternate infinite;
 }
+.dark.connecting .left {
+    background-image: url("images/dark/left/connecting.svg");
+}
 .connecting .eyes {
     background-image: url("images/eyes/closed.svg");
+}
+.dark.connecting .eyes {
+    background-image: url("images/dark/eyes/closed.svg");
 }
 .connecting .hair-dynamic {
     animation: rotate 3.5s ease-in-out alternate infinite;
@@ -373,6 +456,9 @@ body.dark nav .buttons-container {
 #mascot:hover .mouth {
     background-image: url("images/mouth/smile.svg");
     animation: fade-in 0.2s ease-in-out;
+}
+.dark #mascot:hover .mouth {
+    background-image: url("images/dark/mouth/smile.svg");
 }
 #mascot .eyes {
     transition: transform 0.5s ease;
