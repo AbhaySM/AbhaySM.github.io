@@ -160,16 +160,16 @@ nav b {
     transition: all 0.1s ease;
 }
 .thinking #mascot-bounding-box #backdrop {
-    border-top-right-radius: 20%;
+    border-top-right-radius: 27%;
 }
 .style-2 #mascot-bounding-box #backdrop,
 .style-3 #mascot-bounding-box #backdrop,
 .style-4 #mascot-bounding-box #backdrop {
-    border-top-left-radius: 20%;
+    border-top-left-radius: 27%;
 }
 .listening #mascot-bounding-box #backdrop {
-    /*border-bottom-left-radius: 20%;*/
-    border-bottom-left-radius: 40%;
+    border-bottom-left-radius: 27%;
+    /*border-bottom-left-radius: 40%;*/
 }
 .dark-b #mascot-bounding-box #backdrop {
     background-color: #ffffff;
@@ -193,12 +193,12 @@ nav b {
     width: 128px;
 }
 .small #mascot-bounding-box {
-    height: 72px;
-    width: 72px;
+    height: 64px;
+    width: 64px;
 }
 .xsmall #mascot-bounding-box {
-    height: 48px;
-    width: 48px;
+    height: 40px;
+    width: 40px;
 }
 
 /*Dark Mode*/
