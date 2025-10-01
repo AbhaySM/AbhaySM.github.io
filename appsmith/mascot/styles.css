@@ -155,7 +155,7 @@ nav b {
     left: 50%;
     top: 50%;
     /*transform: translate(-50%, -55%);*/
-    transform: translate(-52%, -52%);
+    transform: translate(-50%, -55%);
     background-color: transparent;
     transition: all 0.1s ease;
 }
@@ -169,6 +169,7 @@ nav b {
 }
 .listening #mascot-bounding-box #backdrop {
     /*border-bottom-left-radius: 20%;*/
+    border-bottom-left-radius: 40%;
 }
 .dark-b #mascot-bounding-box #backdrop {
     background-color: #ffffff;
