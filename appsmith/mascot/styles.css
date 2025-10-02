@@ -159,7 +159,8 @@ nav b {
     background-color: transparent;
     transition: all 0.1s ease;
 }
-.thinking #mascot-bounding-box #backdrop {
+.thinking #mascot-bounding-box #backdrop,
+.disconnected #mascot-bounding-box #backdrop {
     border-top-right-radius: 27%;
 }
 .style-2 #mascot-bounding-box #backdrop,
@@ -169,7 +170,6 @@ nav b {
 }
 .listening #mascot-bounding-box #backdrop {
     border-bottom-left-radius: 27%;
-    /*border-bottom-left-radius: 40%;*/
 }
 .dark-b #mascot-bounding-box #backdrop {
     background-color: #ffffff;
@@ -491,6 +491,25 @@ body.dark nav .buttons-container {
 }
 .connecting .mouth {
     transform: translateX(2%) !important;
+}
+
+/* Disconnected */
+.disconnected .eyes {
+    background-image: url("images/eyes/sleep.svg");
+}
+.disconnected #mascot {
+    animation: rotate 3s ease-in-out alternate infinite;
+}
+.disconnected .hair-dynamic {
+    background-image: none;
+}
+.disconnected .mouth {
+    background-image: url("images/mouth/o-S.svg");
+    animation: sleep 3s step-end alternate infinite;
+}
+.disconnected #icon {
+    animation: gentle-rotate 2s ease-in-out alternate infinite;
+    background-image: url("images/icon/icon-zzz.svg");
 }
 
 /*Mascot hover*/

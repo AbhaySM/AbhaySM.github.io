@@ -161,3 +161,12 @@
         opacity: 1;
     }
 }
+
+@keyframes sleep {
+    0% {
+        background-image: url("images/mouth/o-L.svg");
+    }
+    50% {
+        background-image: url("images/mouth/o-S.svg");
+    }
+}
