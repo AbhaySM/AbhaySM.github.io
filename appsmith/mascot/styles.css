@@ -66,7 +66,7 @@ nav#bottom-nav {
     bottom: 32px;
 }
 nav .buttons-container {
-    padding: 8px;
+    padding: 4px;
     background-color: #efedf2;
     border-radius: 12px;
     display: flex;
