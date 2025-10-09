@@ -235,6 +235,20 @@ body.dark-b nav .buttons-container {
 .eyes {
     background-image: url("images/eyes/closed.svg");
 }
+#mascot .glasses,
+.text.disconnected #mascot .glasses {
+    background-image: url("images/glasses/glasses-c.svg");
+    transform: translateY(-4%) rotate(5deg);
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+.text #mascot .glasses {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+}
+.text.disconnected #mascot .glasses {
+    transition: none;
+}
 
 /* Styles */
 .style-1 .left,
@@ -293,35 +307,35 @@ body.dark-b nav .buttons-container {
 /* States */
 /* Idle/Default */
 .idle #mascot {
-    animation: gentle-bob 1s ease-in-out alternate infinite;
+    animation: gentle-bob 0.75s ease-in-out alternate infinite;
 }
 .idle .face {
-    animation: gentle-bob 3s ease-in-out alternate infinite;
+    animation: gentle-bob 2s ease-in-out alternate infinite;
 }
 .idle .hair-dynamic {
-    animation: gentle-rotate 1s ease-in-out alternate infinite;
+    animation: gentle-rotate 0.75s ease-in-out alternate infinite;
 }
 
 /* Mute */
 .mute .right {
     background-image: url("images/right/headphones.svg");
-    animation: rotate 4s ease-in-out alternate infinite;
+    animation: rotate 3s ease-in-out alternate infinite;
 }
 .mute .left {
     background-image: url("images/left/headphones.svg");
-    animation: rotate 4s ease-in-out alternate infinite;
+    animation: rotate 3s ease-in-out alternate infinite;
 }
 .mute .eyes {
     animation: blink 5s step-end alternate infinite;
 }
 .mute #mascot {
-    animation: rotate 4s ease-in-out alternate infinite;
+    animation: gentle-rotate 3s ease-in-out alternate infinite;
 }
 .mute .face {
     animation: gentle-bob 2s ease-in-out alternate infinite;
 }
 .mute .hair-dynamic {
-    animation: gentle-rotate 2s ease-in-out alternate infinite;
+    animation: gentle-rotate 1.5s ease-in-out alternate infinite;
     animation-delay: 1s;
 }
 
@@ -333,13 +347,13 @@ body.dark-b nav .buttons-container {
     animation: blink 5s step-end alternate infinite;
 }
 .listening #mascot {
-    animation: gentle-bob 1s ease-in-out alternate infinite;
+    animation: gentle-bob 0.75s ease-in-out alternate infinite;
 }
 .listening .face {
-    animation: gentle-bob 3s ease-in-out alternate infinite;
+    animation: gentle-bob 2s ease-in-out alternate infinite;
 }
 .listening .hair-dynamic {
-    animation: gentle-rotate 1s ease-in-out alternate infinite;
+    animation: gentle-rotate 0.75s ease-in-out alternate infinite;
 }
 
 /* Thinking */
@@ -355,10 +369,10 @@ body.dark-b nav .buttons-container {
         icon-change 4s step-end infinite;
 }
 .thinking #mascot {
-    animation: gentle-bob 1s ease-in-out alternate infinite;
+    animation: gentle-bob 0.75s ease-in-out alternate infinite;
 }
 .thinking .face {
-    animation: gentle-bob 3s ease-in-out alternate infinite;
+    animation: gentle-bob 2s ease-in-out alternate infinite;
 }
 
 /* Speaking */
@@ -366,13 +380,13 @@ body.dark-b nav .buttons-container {
     animation: blink 5s step-end alternate infinite;
 }
 .speaking .hair-dynamic {
-    animation: gentle-rotate 1s ease-in-out alternate infinite;
+    animation: gentle-rotate 0.75s ease-in-out alternate infinite;
 }
 .speaking #mascot {
-    animation: gentle-bob 1s ease-in-out alternate infinite;
+    animation: gentle-bob 0.75s ease-in-out alternate infinite;
 }
 .speaking .face {
-    animation: gentle-bob 3s ease-in-out alternate infinite;
+    animation: gentle-bob 2s ease-in-out alternate infinite;
 }
 .speaking .mouth {
     animation: speak 1.5s step-end alternate infinite;
@@ -381,20 +395,20 @@ body.dark-b nav .buttons-container {
 /* Connecting */
 .connecting .left {
     background-image: url("images/left/connecting.svg");
-    animation: rotate 3.5s ease-in-out alternate infinite;
+    animation: rotate 1.75s ease-in-out alternate infinite;
 }
 .connecting .eyes {
     background-image: url("images/eyes/closed.svg");
 }
 .connecting .hair-dynamic {
-    animation: rotate 3.5s ease-in-out alternate infinite;
+    animation: rotate 1.75s ease-in-out alternate infinite;
     animation-delay: 1.75s;
 }
 .connecting #mascot {
-    animation: gentle-rotate 3.5s ease-in-out alternate infinite;
+    animation: gentle-rotate 1.75s ease-in-out alternate infinite;
 }
 .connecting .face {
-    animation: gentle-bob 3.5s ease-in-out alternate infinite;
+    animation: gentle-bob 1.75s ease-in-out alternate infinite;
 }
 .connecting .mouth {
     transform: translateX(2%) !important;
@@ -405,14 +419,14 @@ body.dark-b nav .buttons-container {
     background-image: url("images/eyes/sleep.svg");
 }
 .disconnected #mascot {
-    animation: rotate 3s ease-in-out alternate infinite;
+    animation: rotate 2s ease-in-out alternate infinite;
 }
 .disconnected .hair-dynamic {
     background-image: none;
 }
 .disconnected .mouth {
     background-image: url("images/mouth/o-S.svg");
-    animation: sleep 3s step-end alternate infinite;
+    animation: sleep 2s step-end alternate infinite;
 }
 .disconnected #icon {
     animation: gentle-rotate 2s ease-in-out alternate infinite;
