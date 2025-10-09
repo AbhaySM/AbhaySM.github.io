@@ -343,6 +343,9 @@ body.dark-b nav .buttons-container {
 .listening .left {
     background-image: url("images/left/listening.svg");
 }
+.text.listening .left {
+    background-image: url("images/left/text-active.svg");
+}
 .listening .eyes {
     animation: blink 5s step-end alternate infinite;
 }
