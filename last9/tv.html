@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>TV Animation</title>
+        <style>
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #18181b;
+            }
+            img {
+                width: 100%;
+                z-index: 2;
+                position: relative;
+            }
+            .tv-container {
+                width: 1003px;
+                height: 430px;
+                position: relative;
+            }
+            .tv-animation {
+                position: absolute;
+                top: 0;
+                right: 0;
+                mix-blend-mode: multiply;
+                display: block;
+                height: 100%;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tv-container">
+            <img src="img/tv.svg" />
+            <img src="img/tv-animation.gif" class="tv-animation" />
+        </div>
+    </body>
+</html>
