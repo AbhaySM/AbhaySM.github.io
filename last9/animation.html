@@ -16,8 +16,10 @@
                 background-color: #18181b;
             }
             .screenshot-container {
-                background: url("img/background.jpg") 50% 50% no-repeat;
-                background-size: cover;
+                background:
+                    url("img/background-noise.png") 0 0 / 128px 128px repeat,
+                    url("img/background.jpg") 50% 50% / cover no-repeat;
+                background-blend-mode: overlay;
                 width: 1152px;
                 height: 608px;
                 padding: 96px 96px 0;
